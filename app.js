@@ -13,14 +13,11 @@ var app = express();
 
 // Setup mongoose connection
 
-const hostname = process.env.HOSTNAME;
-const key = process.env.KEY;
-
 const mongoose = require("mongoose");
 mongoose.set("strictQuery", false);
-const mongoDB = `mongodb+srv://${hostname}:${key}@cluster0.k7ej48n.mongodb.net/?retryWrites=true&w=majority`;
 
 async function main() {
+	const mongoDB = process.env.CONNECTION_KEY;
 	await mongoose.connect(mongoDB);
 }
 
@@ -28,7 +25,7 @@ main().catch((e) => console.log(e));
 
 // view engine setup
 app.set("views", path.join(__dirname, "views"));
-app.set("view engine", "ejs");
+app.set("view engine", "pug");
 
 app.use(logger("dev"));
 app.use(express.json());
