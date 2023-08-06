@@ -5,7 +5,7 @@ exports.author_list = asyncHandler(async (req, res, next) => {
 	res.send("NOT IMPLEMENTED: Author list");
 });
 
-exports.author_details = asyncHandler(async (req, res, next) => {
+exports.author_detail = asyncHandler(async (req, res, next) => {
 	res.send(`NOT IMPLEMENTED: Author list: ${req.params.id} `);
 });
 

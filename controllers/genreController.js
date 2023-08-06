@@ -5,7 +5,7 @@ exports.genre_list = asyncHandler(async (req, res, next) => {
 	res.send("NOT IMPLEMENTED: Genre list");
 });
 
-exports.genre_details = asyncHandler(async (req, res, next) => {
+exports.genre_detail = asyncHandler(async (req, res, next) => {
 	res.send(`NOT IMPLEMENTED: Genre list: ${req.params.id} `);
 });
 
@@ -13,7 +13,7 @@ exports.genre_create_get = asyncHandler(async (req, res, next) => {
 	res.send(`NOT IMPLEMENTED: Genre create GET `);
 });
 
-exports.author_create_post = asyncHandler(async (req, res, next) => {
+exports.genre_create_post = asyncHandler(async (req, res, next) => {
 	res.send(`NOT IMPLEMENTED: Genre create POST `);
 });
 

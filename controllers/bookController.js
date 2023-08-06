@@ -9,7 +9,7 @@ exports.book_list = asyncHandler(async (req, res, next) => {
 	res.send("NOT IMPLEMENTED: Book list");
 });
 
-exports.book_details = asyncHandler(async (req, res, next) => {
+exports.book_detail = asyncHandler(async (req, res, next) => {
 	res.send(`NOT IMPLEMENTED: Book list: ${req.params.id} `);
 });
 

@@ -5,7 +5,7 @@ exports.bookinstance_list = asyncHandler(async (req, res, next) => {
 	res.send("NOT IMPLEMENTED: BookInstance list");
 });
 
-exports.bookinstance_details = asyncHandler(async (req, res, next) => {
+exports.bookinstance_detail = asyncHandler(async (req, res, next) => {
 	res.send(`NOT IMPLEMENTED: BookInstance list: ${req.params.id} `);
 });
 
