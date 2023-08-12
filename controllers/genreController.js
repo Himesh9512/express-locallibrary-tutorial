@@ -95,7 +95,7 @@ exports.genre_delete_post = asyncHandler(async (req, res, next) => {
 			genre_books: booksInGenre,
 		});
 	} else {
-		await Genre.findByIdAndRemove(req.body.id);
+		await Genre.findByIdAndRemove(req.body.genreid);
 		res.redirect("/catalog/genres");
 	}
 });
